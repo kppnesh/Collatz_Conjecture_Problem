@@ -11,10 +11,12 @@ namespace MathProj
         BigInteger x;
         public Calculation(BigInteger startValue)
         {
+            //Constructor used to initialize the start value
             x=startValue;
             this.calculate();
         }
 
+        //Iterate through numbers till we find our desired output
         public void calculate()
         {
             try
@@ -50,6 +52,7 @@ namespace MathProj
             }
         }
 
+        //Core problem logic is written here
         BigInteger Logic(BigInteger n)
         {
             try
@@ -71,6 +74,8 @@ namespace MathProj
                 return BigInteger.MinusOne;
             }
         }
+
+        //Method to find a number is odd/even and proceed calculations 
         BigInteger oddEven(BigInteger n)
         {
             try
